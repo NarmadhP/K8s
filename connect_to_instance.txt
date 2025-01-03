@@ -1,0 +1,5 @@
+1.Locate the pem file you got after creating the instance
+2. copy the dns location of your aws instance
+3. goto the path of pem file and give chmod 600 permission for the file
+4. run the command 
+    ssh -i " *.pem" ec2-user@ipv4-dns-.amazonaws.com
