@@ -29,3 +29,6 @@ if [ $status -eq 0 ]; then
 else 
   echo "Error occurred: $output" >&2
 fi 
+## installing and starting minikube
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64/
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
